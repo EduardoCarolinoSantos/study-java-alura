@@ -18,6 +18,9 @@ public class Main {
                   """ + anoDeLancamento;
         System.out.println(sinopse);
 
+        int classificacao;
+        classificacao = (int) (media / 2); // Estou mandando o Java fazer a conversão do tipo primitivo termo correto "Casting".
+        System.out.println("Estrelas:" + classificacao);
 
     }
 }
