@@ -39,7 +39,7 @@ public class ControleBancario {
                     """);
 
             if (opcao == 1) {
-                System.out.println("O saldo atualizado é: R$ " + saldoAtual);
+                System.out.printf("O saldo atualizado é: R$ %.2f%n", saldoAtual);
             } else if (opcao ==2) {
                 System.out.println("Qual o valor que deseja transferir:");
                 double valor = scanner.nextDouble();
@@ -47,13 +47,13 @@ public class ControleBancario {
                     System.out.println("Você não tem saldo para realizar essa transferência.");
                 } else{
                     saldoAtual -= valor;
-                    System.out.println("Novo saldo R$" + saldoAtual);
+                    System.out.printf("Novo saldo R$ %.2f%n", saldoAtual);
                 }
             } else if (opcao == 3) {
                 System.out.println("Digite quanto você está recebendo: ");
                 double valor = scanner.nextDouble();
                 saldoAtual += valor;
-                System.out.println("Novo saldo R$" +saldoAtual);
+                System.out.printf("Novo saldo R$ %.2f%n", saldoAtual);
             } else if (opcao != 4) {
                 System.out.println("Opção invalida");
             }
